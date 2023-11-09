@@ -10,7 +10,7 @@
 #include <errno.h>
 #include <fcntl.h>
 
-
+char *read_command(void);
 
 
 #endif
