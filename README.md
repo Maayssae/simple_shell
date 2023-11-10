@@ -1,1 +1,1 @@
-This shell basic project is made bye Isaac and Mayssae
+This shell basic project is made by Isaac and Mayssae
