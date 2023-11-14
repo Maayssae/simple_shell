@@ -4,7 +4,7 @@
 * **strtow - splits a string into words. Repeat delimiters are ignored
 * @str: the input string to be split
 * @d: the delimeter string. If NULL it defaults to a space character
-* Return: a pointer to an array of strings from input string, or NULL on failure
+* Return: pointer to an array of strings from input string, or NULL on failure
 */
 
 char **strtow(char *str, char *d)
@@ -22,7 +22,7 @@ numwords++;
 
 if (numwords == 0)
 return (NULL);
-string = malloc((1 + numwords) * sizeof(char *));
+string = malloc((1 + numwords) *sizeof(char *));
 if (!string)
 return (NULL);
 for (i = 0, j = 0; j < numwords; j++)
@@ -67,7 +67,7 @@ if ((str[i] != d && str[i + 1] == d) ||
 numwords++;
 if (numwords == 0)
 return (NULL);
-string = malloc((1 + numwords) * sizeof(char *));
+string = malloc((1 + numwords) *sizeof(char *));
 if (!string)
 return (NULL);
 for (i = 0, j = 0; j < numwords; j++)
